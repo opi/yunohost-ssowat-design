@@ -6,6 +6,8 @@
     <title>YunoHost Portal</title>
     <link rel="stylesheet" href="assets/css/artichaut.css">
     <link rel="stylesheet" href="assets/css/artichaut-col.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/ynh-style.css">
     <script src="assets/js/jquery-1.10.2.min.js"></script>
 </head>
 <body>
