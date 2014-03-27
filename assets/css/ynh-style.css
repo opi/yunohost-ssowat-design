@@ -1,8 +1,28 @@
+/* ==========================================================================
+   Sommaire
+   1 = Layout general
+   2 = Apps
+   3 = User
+   ========================================================================== */
+
+/* ==========================================================================
+   1 = Layout general
+   ========================================================================== */
+
 body {
   background: #41444F;
 }
 
 a { text-decoration: none; }
+
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-family: 'source_sans_probold';
+}
 
 .sourcePro {
   font-family: 'source_sans_proregular';
@@ -23,6 +43,10 @@ a { text-decoration: none; }
   -webkit-transition: all 0.3s ease;
   z-index: 10;
 }
+
+/* ==========================================================================
+   2 = Apps
+   ========================================================================== */
 
 .listing-apps li {
   margin: 0 0 1em 1em;
@@ -99,3 +123,18 @@ a { text-decoration: none; }
   font-size: 0.3em;
   margin: -1.2em 0 0 0.2em;
 }    
+
+/* ==========================================================================
+   3 = User
+   ========================================================================== */
+
+.user-container a { color: #FFF; }
+
+.user-container h2 { font-size: 1.5em; }
+  .user-container h2 small {
+    font-size: 0.75em;
+    font-family: 'source_sans_proregular';
+  }
+
+.user-mail { color: #999; }
+

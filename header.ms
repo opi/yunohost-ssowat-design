@@ -15,7 +15,7 @@
 <div class="user-container col colNomarge wrapper">
   <a href="edit.html"><img src="assets/img/avatar.png"></a>
   <div class="user-info">
-    <h2>{{{title}}}</h2>
+    <h2><a href="edit.html">{{{title}}}</a></h2>
     <span class="user-mail">{{mail}}</span>
   </div>
 </div>
