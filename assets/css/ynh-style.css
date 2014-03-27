@@ -18,7 +18,8 @@ a { text-decoration: none; }
 
 .listing-apps li {
   margin: 0 0 1em 1em;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), -2px -2px 3px 0 rgba(0, 0, 0, 0.7) inset;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), 
+              -2px -2px 3px 0 rgba(0, 0, 0, 0.7) inset;
 }
 
 .listing-apps a {
@@ -32,9 +33,52 @@ a { text-decoration: none; }
   background: #666;
   color: #FFFFFF;
   font-size: 4em;
-  transition: all 0.3s ease;
+          transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
 }
+  .listing-apps a:hover:before,
+  .listing-apps a:focus:before {
+    height: 10px;
+  }
+  .listing-apps a:hover:after,
+  .listing-apps a:focus:after {
+    width: 10px;
+  }
+
+  .listing-apps a:hover:after, 
+  .listing-apps a:focus:after,
+  .listing-apps a:hover:before,
+  .listing-apps a:focus:before {
+    background: #333;
+  }
+
+  .listing-apps a:after,
+  .listing-apps a:before {
+    content: "";
+    position: absolute;
+            transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+  }
+
+  .listing-apps a:before {
+    width: 100%;
+    height: 0;
+    left: 5px;
+    top: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+            transform: skew(45deg, 0deg);
+    -webkit-transform: skew(45deg, 0deg);
+  }
+
+  .listing-apps a:after {
+    width: 0;
+    height: 100%;
+    left: 100%;
+    top: 5px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.4);
+            transform: skew(0deg, 45deg);
+    -webkit-transform: skew(0deg, 45deg);
+  }
 
 .listing-apps span {
   display: block;
