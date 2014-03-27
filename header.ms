@@ -16,7 +16,7 @@
 <div class="col-xs-1 visible-xs"></div>
 <div class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offest-1">
 <div class="row">
-<div class="col-sm-8 col-sm-offset-2 col-xs-12" style="max-width: 750px;">
+<div class="col-sm-8 col-sm-offset-2 col-xs-12">
 
 <h2>{{{title}}}</h2>
 {{#connected}}

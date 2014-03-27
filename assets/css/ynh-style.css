@@ -2,6 +2,8 @@ body {
   background: rgb(104,104,104);
 }
 
+a { text-decoration: none; }
+
 .sourcePro {
   font-family: 'source_sans_proregular';
 }
