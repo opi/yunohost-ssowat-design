@@ -12,7 +12,7 @@
 </head>
 <body>
 <!-- Padding bootstrap style -->
-<div class="user-container col colNomarge">
+<div class="user-container col colNomarge wrapper">
   <a href="edit.html"><img src="assets/img/avatar.png"></a>
   <div class="user-info">
     <h2>{{{title}}}</h2>
