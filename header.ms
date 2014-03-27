@@ -12,7 +12,13 @@
 </head>
 <body>
 <!-- Padding bootstrap style -->
-<h2>{{{title}}}</h2>
+<div class="user-container col colNomarge">
+  <a href="edit.html"><img src="assets/img/avatar.png"></a>
+  <div class="user-info">
+    <h2>{{{title}}}</h2>
+    <span class="user-mail">{{mail}}</span>
+  </div>
+</div>
 {{#connected}}
 <div class="pull-right" style="margin-top: -31px">
     <a href="?action=logout">Logout</a>
