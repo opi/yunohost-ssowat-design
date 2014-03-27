@@ -24,7 +24,6 @@
     <a href="?action=logout">Logout</a>
 </div>
 {{/connected}}
-<hr>
 
 {{#flash_win}}
 <div class="alert alert-success">{{.}}</div>
