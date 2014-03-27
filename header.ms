@@ -11,29 +11,30 @@
     <script src="assets/js/jquery-1.10.2.min.js"></script>
 </head>
 <body>
-<!-- Padding bootstrap style -->
-<div class="user-container col colNomarge wrapper">
-  <a class="user-img" href="edit.html"><img src="assets/img/avatar.png"></a>
-  <div class="user-info">
-    <h2><a href="edit.html">{{{title}}}</a></h2>
-    <span class="user-mail">{{mail}}</span>
-  </div>
-</div>
-{{#connected}}
-<div class="pull-right" style="margin-top: -31px">
-    <a href="?action=logout">Logout</a>
-</div>
-{{/connected}}
 
-{{#flash_win}}
-<div class="alert alert-success">{{.}}</div>
-{{/flash_win}}
+  <div class="overlay">
+    <div class="user-container col colNomarge wrapper">
+      <a class="user-img" href="edit.html"><img src="assets/img/avatar.png"></a>
+      <div class="user-info">
+        <h2><a href="edit.html">{{{title}}}</a></h2>
+        <span class="user-mail">{{mail}}</span>
+      </div>
+    </div>
+    {{#connected}}
+    <div class="pull-right" style="margin-top: -31px">
+        <a href="?action=logout">Logout</a>
+    </div>
+    {{/connected}}
 
-{{#flash_fail}}
-<div class="alert alert-danger">{{.}}</div>
-{{/flash_fail}}
+    {{#flash_win}}
+    <div class="alert alert-success">{{.}}</div>
+    {{/flash_win}}
 
-{{#flash_info}}
-<div class="alert alert-info">{{.}}</div>
-{{/flash_info}}
+    {{#flash_fail}}
+    <div class="alert alert-danger">{{.}}</div>
+    {{/flash_fail}}
+
+    {{#flash_info}}
+    <div class="alert alert-info">{{.}}</div>
+    {{/flash_info}}
 
