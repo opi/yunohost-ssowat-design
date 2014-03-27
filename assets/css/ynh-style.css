@@ -36,6 +36,12 @@ a { text-decoration: none; }
           transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
 }
+  .listing-apps a:hover,
+  .listing-apps a:focus {
+    left: -10px;
+    top: -10px;
+    box-shadow: none;
+  }
   .listing-apps a:hover:before,
   .listing-apps a:focus:before {
     height: 10px;
