@@ -170,6 +170,8 @@ h6 {
    3 = User
    ========================================================================== */
 
+.user-container { padding: 0.4em 1em; }
+
 .user-container a { color: #FFF; }
 
 .user-container h2 {
