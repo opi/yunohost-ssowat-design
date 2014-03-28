@@ -36,15 +36,7 @@
           <a class="user-img" href="edit.html"><img src="assets/img/avatar.png"></a>
         {{/connected}}
         <div class="user-info">
-          <h2>
-            {{#connected}}
-              <a href="edit.html">
-            {{/connected}}
-              {{{title}}}
-            {{#connected}}
-              </a>
-            {{/connected}}
-          </h2>
+          <h2><a href="edit.html">{{{title}}}</a></h2>
           <span class="user-mail">{{mail}}</span>
         </div>
       </div>
