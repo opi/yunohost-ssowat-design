@@ -6,6 +6,7 @@
     <title>YunoHost Portal</title>
     <link rel="stylesheet" href="assets/css/artichaut.css">
     <link rel="stylesheet" href="assets/css/artichaut-col.css">
+    <link rel="stylesheet" href="assets/css/artichaut-messages.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/ynh-style.css">
     <script src="assets/js/jquery-1.10.2.min.js"></script>
@@ -13,6 +14,17 @@
 <body>
 
   <div class="overlay">
+    {{#flash_win}}
+    <div class="messages success">{{.}}</div>
+    {{/flash_win}}
+
+    {{#flash_fail}}
+    <div class="messages danger">{{.}}</div>
+    {{/flash_fail}}
+
+    {{#flash_info}}
+    <div class="messages info">{{.}}</div>
+    {{/flash_info}}
     <div class="wrapper">
       {{#connected}}
       <ul class="ul-reset user-menu">
@@ -20,7 +32,9 @@
       </ul>
       {{/connected}}
       <div class="user-container col colNomarge">
-        <a class="user-img" href="edit.html"><img src="assets/img/avatar.png"></a>
+        {{#connected}}
+          <a class="user-img" href="edit.html"><img src="assets/img/avatar.png"></a>
+        {{/connected}}
         <div class="user-info">
           <h2><a href="edit.html">{{{title}}}</a></h2>
           <span class="user-mail">{{mail}}</span>
@@ -28,15 +42,5 @@
       </div>
     </div>
 
-    {{#flash_win}}
-    <div class="alert alert-success">{{.}}</div>
-    {{/flash_win}}
-
-    {{#flash_fail}}
-    <div class="alert alert-danger">{{.}}</div>
-    {{/flash_fail}}
-
-    {{#flash_info}}
-    <div class="alert alert-info">{{.}}</div>
-    {{/flash_info}}
+    
 
