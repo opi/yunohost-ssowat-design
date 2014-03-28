@@ -37,9 +37,13 @@
         {{/connected}}
         <div class="user-info">
           <h2>
-            {{#connected}}<a href="edit.html">{{/connected}}
+            {{#connected}}
+              <a href="edit.html">
+            {{/connected}}
               {{{title}}}
-            {{#connected}}</a>{{/connected}}
+            {{#connected}}
+              </a>
+            {{/connected}}
           </h2>
           <span class="user-mail">{{mail}}</span>
         </div>
