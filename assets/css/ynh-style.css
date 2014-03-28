@@ -216,3 +216,7 @@ h6 {
     -webkit-transition: all 0.3s ease;
     z-index: 1;
   }
+    .user-menu a:hover,
+    .user-menu a:focus {
+      color: #FFF;
+    }
