@@ -13,6 +13,11 @@
 <body>
 
   <div class="overlay">
+    {{#connected}}
+    <ul class="ul-reset user-menu">
+      <li><a class="icon icon-connexion" href="?action=logout">Logout</a></li>
+    </ul>
+    {{/connected}}
     <div class="user-container col colNomarge wrapper">
       <a class="user-img" href="edit.html"><img src="assets/img/avatar.png"></a>
       <div class="user-info">
@@ -20,11 +25,6 @@
         <span class="user-mail">{{mail}}</span>
       </div>
     </div>
-    {{#connected}}
-    <ul class="ul-reset user-menu">
-      <li><a class="icon icon-connexion" href="?action=logout">Logout</a></li>
-    </ul>
-    {{/connected}}
 
     {{#flash_win}}
     <div class="alert alert-success">{{.}}</div>

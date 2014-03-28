@@ -205,3 +205,12 @@ h6 {
 .user-menu {
   float: right;
 }
+  .user-menu a {
+    color: #999;
+    display: block;
+    padding: 1.25em 3em;
+    position: relative;
+            transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    z-index: 1;
+  }
