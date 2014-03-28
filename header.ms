@@ -15,15 +15,15 @@
 
   <div class="overlay">
     {{#flash_win}}
-    <div class="messages success">{{.}}</div>
+    <div class="box messages success">{{.}}</div>
     {{/flash_win}}
 
     {{#flash_fail}}
-    <div class="messages danger">{{.}}</div>
+    <div class="box messages danger">{{.}}</div>
     {{/flash_fail}}
 
     {{#flash_info}}
-    <div class="messages info">{{.}}</div>
+    <div class="box messages info">{{.}}</div>
     {{/flash_info}}
     <div class="wrapper">
       {{#connected}}
@@ -36,7 +36,11 @@
           <a class="user-img" href="edit.html"><img src="assets/img/avatar.png"></a>
         {{/connected}}
         <div class="user-info">
-          <h2><a href="edit.html">{{{title}}}</a></h2>
+          <h2>
+            {{#connected}}<a href="edit.html">{{/connected}}
+              {{{title}}}
+            {{#connected}}</a>{{/connected}}
+          </h2>
           <span class="user-mail">{{mail}}</span>
         </div>
       </div>
