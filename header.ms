@@ -33,7 +33,7 @@
       {{/connected}}
       <div class="user-container col colNomarge">
         {{#connected}}
-          <a class="user-img" href="edit.html"><img src="assets/img/avatar.png"></a>
+        <a class="user-img" href="edit.html"><img src="assets/img/avatar.png"></a>
         {{/connected}}
         <div class="user-info">
           <h2>{{{title}}}</h2>
