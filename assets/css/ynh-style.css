@@ -49,6 +49,43 @@ h6 {
   padding: 2%;
 }
 
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  margin-right: 0.5em;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-connexion:before {
+  content: "\e600";
+}
+.icon-comments:before {
+  content: "\e602";
+}
+.icon-envelope:before {
+  content: "\e603";
+}
+.icon-user:before {
+  content: "\e601";
+}
+.icon-upload:before {
+  content: "\e604";
+}
+.icon-left-open:before {
+  content: "\e802";
+}
+.icon-right-open:before {
+  content: "\e801";
+}
+
 /* ==========================================================================
    2 = Apps
    ========================================================================== */
@@ -163,4 +200,8 @@ h6 {
   border-radius: 90px;
   overflow: hidden;
   margin: 0.2em auto;
+}
+
+.user-menu {
+  float: right;
 }

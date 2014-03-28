@@ -21,9 +21,9 @@
       </div>
     </div>
     {{#connected}}
-    <div class="pull-right" style="margin-top: -31px">
-        <a href="?action=logout">Logout</a>
-    </div>
+    <ul class="ul-reset user-menu">
+      <li><a class="icon icon-connexion" href="?action=logout">Logout</a></li>
+    </ul>
     {{/connected}}
 
     {{#flash_win}}
