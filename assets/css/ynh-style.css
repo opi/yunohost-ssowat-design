@@ -3,6 +3,7 @@
    1 = Layout general
    2 = Apps
    3 = User
+   4 = Form
    ========================================================================== */
 
 /* ==========================================================================
@@ -84,6 +85,19 @@ h6 {
 }
 .icon-right-open:before {
   content: "\e801";
+}
+
+.login-form {
+  background: #FFF;
+  width: 30em;
+  margin: auto;
+}
+
+select, 
+.form-text, 
+textarea {
+  border: 1px solid #DDD;
+  padding: 0.5em 0.8em;
 }
 
 /* ==========================================================================
