@@ -21,7 +21,10 @@
 }
 
 button.btn,
-input.btn { border:0; }
+input.btn {
+  border:0;
+  cursor:pointer;
+}
 
   .btn:hover, 
   .btn:focus {
