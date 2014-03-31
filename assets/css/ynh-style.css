@@ -111,8 +111,7 @@ textarea {
 
   .form-group label {
     display: inline-block;
-    min-width: 5em;
-    position: relative;
+    min-width: 1em;
   }
 
   .form-group label:before {
