@@ -25,22 +25,6 @@
     {{#flash_info}}
     <div class="box messages info">{{.}}</div>
     {{/flash_info}}
-    <div class="wrapper">
-      {{#connected}}
-      <ul class="ul-reset user-menu">
-        <li><a class="icon icon-connexion" href="?action=logout">Logout</a></li>
-      </ul>
-      {{/connected}}
-      <div class="user-container col colNomarge">
-        {{#connected}}
-        <a class="user-img" href="edit.html"><img src="assets/img/avatar.png"></a>
-        {{/connected}}
-        <div class="user-info">
-          <h2>{{{title}}}</h2>
-          <span class="user-mail">{{mail}}</span>
-        </div>
-      </div>
-    </div>
 
     
 
