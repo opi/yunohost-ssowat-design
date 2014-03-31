@@ -14,7 +14,7 @@
 <body>
 
   <div class="overlay">
-    <h1 id="logo" class="logo"><img src="img/logo-ynh.svg"/><span class="element-invisible">Yunohost</span></h1>
+    <h1 id="logo" class="logo"><img src="assets/img/logo-ynh.svg"/><span class="element-invisible">Yunohost</span></h1>
     {{#flash_win}}
     <div class="box messages success">{{.}}</div>
     {{/flash_win}}
