@@ -105,12 +105,24 @@ textarea {
 
 .form-group {
   border: 1px solid #EEE;
-  padding: 0.5em 0.8em;
+  padding: 0.5em 0.8em 0.5em 2em;
+  position: relative;
 }
 
   .form-group label {
     display: inline-block;
     min-width: 5em;
+    position: relative;
+  }
+
+  .form-group label:before {
+    background: #EEE;
+    color: #666;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2em;
+    height: 100%;
   }
 
   .form-group .form-text {
