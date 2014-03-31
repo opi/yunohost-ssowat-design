@@ -110,7 +110,12 @@ textarea {
 
   .form-group label {
     display: inline-block;
-    min-width: 10em;
+    min-width: 5em;
+  }
+
+  .form-group .form-text {
+    display: inline-block;
+    min-width: 5em;
   }
 
 .logo {
