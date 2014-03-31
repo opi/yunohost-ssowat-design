@@ -245,12 +245,19 @@ textarea {
    ========================================================================== */
 
 .logo-login {
-  margin: auto;
+  text-align: center;
+  margin-bottom: 1em;
+  opacity: 0.5;
 }
 
 .login-form {
   width: 21em;
   margin: auto;
+  height: 18em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -9em 0 0 -10.5em;
 }
 
 .login-form .btn {
