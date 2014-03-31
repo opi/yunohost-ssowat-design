@@ -65,8 +65,20 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-connexion:before {
-  content: "\e600";
+.icon-user:before {
+  content: "\e800";
+}
+.icon-lock:before {
+  content: "\e801";
+}
+.icon-left-open:before {
+  content: "\e802";
+}
+.icon-right-open-1:before {
+  content: "\e803";
+}
+.icon-upload:before {
+  content: "\e604";
 }
 .icon-comments:before {
   content: "\e602";
@@ -74,22 +86,13 @@ h6 {
 .icon-envelope:before {
   content: "\e603";
 }
-.icon-user:before {
-  content: "\e601";
-}
-.icon-upload:before {
-  content: "\e604";
-}
-.icon-left-open:before {
-  content: "\e802";
-}
-.icon-right-open:before {
-  content: "\e801";
+.icon-connexion:before {
+  content: "\e600";
 }
 
 .login-form {
   background: #FFF;
-  width: 30em;
+  width: 21em;
   margin: auto;
   
 }
@@ -97,9 +100,18 @@ h6 {
 select, 
 .form-text, 
 textarea {
-  border: 1px solid #DDD;
+  border: 0;
+}
+
+.form-group {
+  border: 1px solid #EEE;
   padding: 0.5em 0.8em;
 }
+
+  .form-group label {
+    display: inline-block;
+    min-width: 10em;
+  }
 
 .logo {
   position: absolute;
