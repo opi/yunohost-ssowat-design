@@ -91,7 +91,6 @@ h6 {
 }
 
 .login-form {
-  background: #FFF;
   width: 21em;
   margin: auto;
   
@@ -104,8 +103,9 @@ textarea {
 }
 
 .form-group {
-  
   position: relative;
+  margin-bottom: 1em;
+  background: #FFF;
 }
 
   .form-group label {
