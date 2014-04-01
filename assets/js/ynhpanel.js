@@ -122,8 +122,6 @@ domReady(function(){
   // Don't do this in iframe
   if (window.self !== window.top) {return false;}
 
-  console.log(window.location.pathname);
-
   // Add portal stylesheet
   var portalStyle = document.createElement("link");
   portalStyle.setAttribute("rel", "stylesheet");
@@ -175,7 +173,13 @@ domReady(function(){
     overlay.innerHTML += '<ul>'+ links.join('') +'</ul>';
 
     // Add overlay to DOM
-    document.body.insertBefore(overlay, null);          
+    document.body.insertBefore(overlay, null);
+    var ynhssoPath = window.location.pathname;
+
+    if(ynhssoPath == '/ynhsso/') {
+      Element.toggleClass(overlay, 'visible');
+      Element.toggleClass(portal, 'visible');
+    }
 
     // Bind YNH Button
     window.addEvent(portal, 'click', function(e){
