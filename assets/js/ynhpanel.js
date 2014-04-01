@@ -168,7 +168,7 @@ domReady(function(){
     // Add application links
     var links = [];
     Array.each(response.app, function(app){
-      links.push('<li><a href="//'+app.url+'" data-first-letter="'+ app.name.substr(0,2) +'"><span class="sourcePro">'+app.name+'</span></a></li>');
+      links.push('<li><a href="//'+app.url+'"><span data-first-letter="'+ app.name.substr(0,2) +'"></span><span class="sourcePro">'+app.name+'</span></a></li>');
     });
     overlay.innerHTML += '<div id="apps" class="wrapper apps"><ul class="ul-reset listing-apps col colNomarge sourceProBold">'+ links.join('') +'</ul></div>';
 

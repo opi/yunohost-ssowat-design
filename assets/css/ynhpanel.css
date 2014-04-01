@@ -47,10 +47,9 @@
 	overflow-y: auto;
 
 	opacity: 0;
-	zoom: 1;filter: alpha(opacity=0);
 	
 	color:#fff;
-	background-color: rgba(0,0,0, 0.7);	
+	background: #41444F;
 
 	font-family: Arial, sans-serif;
 	font-size: 16px; /* 100% */
@@ -70,7 +69,6 @@
 	width:100%;
 	left:0;
 	opacity: 1;
-	filter: alpha(opacity=100);
 }
 
 /* reset inherited style */
@@ -134,47 +132,84 @@
 	color: #fff;
 }
 
+#ynhoverlay .apps { margin: 4% 5%; }
 
-
-/* Application list */
-#ynhoverlay ul {
-	margin: 3em auto;
-	display: block;
-	width: 50%;
-	list-style: none;
+#ynhoverlay .listing-apps li {
+  margin: 0 0 1em 1em;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), 
+              -2px -2px 3px 0 rgba(0, 0, 0, 0.7) inset;
 }
-	#ynhoverlay li {display: inline;}
 
-	#ynhoverlay ul a {
-		display: inline-block;
-		vertical-align: top;
-		width: 110px;
-		margin: 3% 6% 3% 0;
-		
-		text-align: center;
-		text-decoration: none;
+#ynhoverlay .listing-apps a {
+  display: block;
+  position: relative;
+  padding: 0.2em;
+  top: 0;
+  left: 0;
+  width: 2.7em;
+  height: 2.7em;
+  background: #666;
+  color: #FFFFFF;
+  font-size: 4em;
+          transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+  #ynhoverlay .listing-apps a:hover,
+  #ynhoverlay .listing-apps a:focus {
+    left: -10px;
+    top: -10px;
+    box-shadow: none;
+  }
+  #ynhoverlay .listing-apps a:hover:before,
+  #ynhoverlay .listing-apps a:focus:before {
+    height: 10px;
+  }
+  #ynhoverlay .listing-apps a:hover:after,
+  #ynhoverlay .listing-apps a:focus:after {
+    width: 10px;
+  }
 
-		border-radius: 5px;
-	}
-	#ynhoverlay ul a:before {
-		content: attr(data-first-letter);
-		display: block;
-		height: 110px;
-		line-height: 110px;
-		margin-bottom:5%;
+  #ynhoverlay .listing-apps a:hover:after, 
+  #ynhoverlay .listing-apps a:focus:after,
+  #ynhoverlay .listing-apps a:hover:before,
+  #ynhoverlay .listing-apps a:focus:before {
+    background: #333;
+  }
 
-		color: #000;
-		background: #fff;
-		text-align: center;
-		text-decoration: none;
-		font-size: 3em;
+  #ynhoverlay .listing-apps a:after,
+  #ynhoverlay .listing-apps a:before {
+    content: "";
+    position: absolute;
+            transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+  }
 
-		border-radius: 5px;	
-	}
+  #ynhoverlay .listing-apps a:before {
+    width: 100%;
+    height: 0;
+    left: 5px;
+    top: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+            transform: skew(45deg, 0deg);
+    -webkit-transform: skew(45deg, 0deg);
+  }
 
-	#ynhoverlay ul a:hover {
-		color:pink;
-	}
-	#ynhoverlay ul a:hover:before {
-		background-color: pink;
-	}
+  #ynhoverlay .listing-apps a:after {
+    width: 0;
+    height: 100%;
+    left: 100%;
+    top: 5px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.4);
+            transform: skew(0deg, 45deg);
+    -webkit-transform: skew(0deg, 45deg);
+  }
+
+#ynhoverlay .listing-apps span {
+  display: block;
+  font-size: 0.3em;
+  margin: -1.2em 0 0 0.2em;
+}    
+
+#ynhoverlay .listing-apps .first-letter:before {
+	content: attr(data-first-letter);
+}    
