@@ -129,6 +129,12 @@ domReady(function(){
   portalStyle.setAttribute("href", '/ynhpanel.css');
   document.getElementsByTagName("head")[0].insertBefore(portalStyle, null);
 
+  var font = document.createElement("link");
+  font.setAttribute("rel", "stylesheet");
+  font.setAttribute("type", "text/css");
+  font.setAttribute("href", '/fonts.css');
+  document.getElementsByTagName("head")[0].insertBefore(font, null);
+
   // Create portal link
   var portal = document.createElement('a');
   portal.setAttribute('id', 'ynhportal');
