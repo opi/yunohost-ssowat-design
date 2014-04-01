@@ -206,9 +206,12 @@
 
 #ynhoverlay .listing-apps span {
   display: block;
-  font-size: 0.3em;
-  margin: -1.2em 0 0 0.2em;
 }    
+
+#ynhoverlay .listing-apps span + span {
+	font-size: 0.3em;
+  margin: -1.2em 0 0 0.2em;
+}
 
 #ynhoverlay .listing-apps .first-letter:before {
 	content: attr(data-first-letter);
