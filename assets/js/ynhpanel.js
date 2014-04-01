@@ -123,17 +123,20 @@ domReady(function(){
   if (window.self !== window.top) {return false;}
 
   // Add portal stylesheet
-  var portalStyle = document.createElement("link");
-  portalStyle.setAttribute("rel", "stylesheet");
-  portalStyle.setAttribute("type", "text/css");
-  portalStyle.setAttribute("href", '/ynhpanel.css');
-  document.getElementsByTagName("head")[0].insertBefore(portalStyle, null);
 
   var font = document.createElement("link");
   font.setAttribute("rel", "stylesheet");
   font.setAttribute("type", "text/css");
   font.setAttribute("href", '/fonts.css');
   document.getElementsByTagName("head")[0].insertBefore(font, null);
+
+  var portalStyle = document.createElement("link");
+  portalStyle.setAttribute("rel", "stylesheet");
+  portalStyle.setAttribute("type", "text/css");
+  portalStyle.setAttribute("href", '/ynhpanel.css');
+  document.getElementsByTagName("head")[0].insertBefore(portalStyle, null);
+
+  
 
   // Create portal link
   var portal = document.createElement('a');
