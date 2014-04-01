@@ -45,11 +45,11 @@
 
 }
 
-.sourcePro {
+#ynhoverlay .sourcePro {
   font-family: 'source_sans_proregular';
 }
 
-.sourceProBold {
+#ynhoverlay .sourceProBold {
   font-family: 'source_sans_probold';
 }
 
