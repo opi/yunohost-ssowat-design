@@ -122,6 +122,8 @@ domReady(function(){
   // Don't do this in iframe
   if (window.self !== window.top) {return false;}
 
+  console.log(window.location.pathname);
+
   // Add portal stylesheet
   var portalStyle = document.createElement("link");
   portalStyle.setAttribute("rel", "stylesheet");
