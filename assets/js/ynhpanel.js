@@ -157,7 +157,8 @@ domReady(function(){
 
     console.log(response);
     // Add overlay header
-    overlay.innerHTML += '<div class="header">' +
+    overlay.innerHTML += '<div class="wrapper">' +
+                          '<ul class="ul-reset user-menu"><li><a class="icon icon-connexion" href="'+ response.portal_url +'?action=logout">Logout</a></li></ul>'+
                           '<a class="user-img" href="edit.html"><img src="assets/img/avatar.png"></a>' +
                           '<div class="user-info">' +
                               '<h2><a href="'+ response.portal_url +'edit.html">'+ response.user.uid +'<small>'+ response.user.name  +'</small></</a></h2>'+
