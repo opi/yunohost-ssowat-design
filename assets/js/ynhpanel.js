@@ -159,8 +159,8 @@ domReady(function(){
     // Add overlay header
     overlay.innerHTML += '<div class="wrapper">' +
                           '<ul class="ul-reset user-menu"><li><a class="icon icon-connexion" href="'+ response.portal_url +'?action=logout">Logout</a></li></ul>'+
-                          '<a class="user-img" href="'+ response.portal_url +'edit.html"><img src="'+ response.portal_url +'assets/img/avatar.png"></a>' +
                           '<div class="user-container col colNomarge">'+
+                            '<a class="user-img" href="'+ response.portal_url +'edit.html"><img src="'+ response.portal_url +'assets/img/avatar.png"></a>' +
                             '<div class="user-info">' +
                                 '<h2><a href="'+ response.portal_url +'edit.html">'+ response.user.uid +'<small>'+ response.user.name  +'</small></</a></h2>'+
                                 '<span class="user-mail">'+ response.user.mail +'</span>'+
