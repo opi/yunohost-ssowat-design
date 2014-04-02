@@ -1,3 +1,26 @@
+/* ==========================================================================
+   Sommaire
+   1 = Font Face Base 64
+   2 =
+   ========================================================================== */
+
+/* ==========================================================================
+   1 = Font face Base 64
+   ========================================================================== */
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('fonts/icomoon.eot');
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype'),
+		 url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAAgEAAoAAAAAB7wAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAABFwAAARceeA4309TLzIAAAVQAAAAYAAAAGAIIv65Y21hcAAABbAAAABcAAAAXP5ptnFnYXNwAAAGDAAAAAgAAAAIAAAAEGhlYWQAAAYUAAAANgAAADYAD4FeaGhlYQAABkwAAAAkAAAAJAQOAh1obXR4AAAGcAAAADAAAAAwDiEAY21heHAAAAagAAAABgAAAAYADFAAbmFtZQAABqgAAAE5AAABOUQYtNZwb3N0AAAH5AAAACAAAAAgAAMAAAEABAQAAQEBCGljb21vb24AAQIAAQA6+BwC+BsD+BgEHgoAGVP/i4seCgAZU/+LiwwHi2v4xPh0BR0AAACgDx0AAAClER0AAAAJHQAABFMSAA0BAQgPERMWGyAlKi80OT5pY29tb29uaWNvbW9vbnUwdTF1MjB1RTYwMHVFNjAydUU2MDN1RTYwNHVFODAwdUU4MDF1RTgwMnVFODAzAAACAYkACgAMAgABAAQABwAKAA0AdgDiASsBegI3Av4DSQOS/JQO/JQO/JQO+5QO94x6FfsCizHli/cCi+DA1NanCItEBWVzcWGLWotAyE7Wi9aLyMiL1ou1eLBupAiL1gXNa7lHizyL+wIxMfsCiwiT93QVeYt9mYudCIv3RgWLnZmZnYudi5l9i3kIi/tGBYt5fX15iwgOsfgm96EVi94xzvsDi/sDizFIiziLWqxfvW+Ki2RDi4uLi/cNuYuLl4qYipeL9wOL5c6L3Qj3KF0Vi902zjCL9xf7F/sv+x/7EouLi5lu9wOLmIuXjJeMi4v3DV2Li4uLZNOLjL2mq7eLvQgO95T3RhVKwfsi+zz4Mov7Ifc9SVQF93P3YhX8UYv3cvtP93P3TwX7KPsiFfcp+0aL98T7KfsSBfu/9xIVi/vE9yn3Rvsp9xIFDrv4a/d7FYuLlfcg+xSb+wKWaiWLi4uLaqtecWNykl6Li4uLMnqLMI0w6YqLiwj3KouL61uL29vbO1uLiyv3G4sFi4vki5fhkeownYuLCA6Yi3sVi46Lj4yQi4+Nk46Xj5aPk5GRkZGWkZ2SnJKfk6GSoZOakZWRmJGVlZKXk5iOmIuYCIuVhZWAmICYgpyEoYShiKSLqIuhjp6RnJGclJiVlpaVl5OZkJiQmo2ajJuLmYiZhgiYhZeEloGWgZN9kXqReo53i3aLbohyhHWEdYJ5gH+AfoaAi4KLfo5+kn6Sf5aBmIUIlIabhKGDoYOehJ2EnISWhZGFkYWQg46Bj4CMg4yECIuA/KCLBQ77M4uoFYv3XgWLkI2Pjo6Pj4+Nj4sIo4uL1gWLno6dkpySnJWal5eXmJqWm5Kckp2Pnoudi52Hm4SchJqAl36XfpV8knuReo95i3gIi0CiiwWQi4+Jj4eOiI2Hi4YIi/teBYuJiomKiYqKiomKiomKioqJioiJiYqIi4WIgoh/h4CIeIdwhnGGcolzi1iLVpRUnwiGjYeNiI2IjomOi48I9PdwFfcii4vWBYuhhJ19mn2Ze5N4i3eLeoN9fX18hHmLdQiLQAUO++X3EPgBFZCRkY6Ui5OLkoiRhZh/i31+fAgsJ+ooBZh8i31+f4WFhYmCi4OLhI2GkQj7CPcNBYaQiJGLk4uTjpKQkNLVsbOSkggO++a9+AEV9wj7DQWQho6Ei4OLg4iFhoYI+wj7DQWGhYSJg4uDi4SNhZF/l4uZl5oI6u4s7wV/mouZl5eRkZKOk4uUi5GIkIUIDviUFPiUFYsMCgADAgABkAAFAAABTAFmAAAARwFMAWYAAAD1ABkAhAAAAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAEAAAOgDAeD/4P/gAeAAIAAAAAEAAAAAAAAAAAAAACAAAAAAAAIAAAADAAAAFAADAAEAAAAUAAQASAAAAA4ACAACAAYAAQAg5gDmBOgD//3//wAAAAAAIOYA5gLoAP/9//8AAf/jGgQaAxgIAAMAAQAAAAAAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAEAANHSUERfDzz1AAsCAAAAAADPYiBRAAAAAM9iIFEAAP/vAiwB0AAAAAgAAgAAAAAAAAABAAAB4P/gAAACMAAAAAACLAABAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAAAEAAAACAAAwAiYAAAIAACACMAAKAg0AAAFhAAAArwAAAK4ACQAAUAAADAAAAAAADgCuAAEAAAAAAAEADgAAAAEAAAAAAAIADgBHAAEAAAAAAAMADgAkAAEAAAAAAAQADgBVAAEAAAAAAAUAFgAOAAEAAAAAAAYABwAyAAEAAAAAAAoAKABjAAMAAQQJAAEADgAAAAMAAQQJAAIADgBHAAMAAQQJAAMADgAkAAMAAQQJAAQADgBVAAMAAQQJAAUAFgAOAAMAAQQJAAYADgA5AAMAAQQJAAoAKABjAGkAYwBvAG0AbwBvAG4AVgBlAHIAcwBpAG8AbgAgADEALgAwAGkAYwBvAG0AbwBvAG5pY29tb29uAGkAYwBvAG0AbwBvAG4AUgBlAGcAdQBsAGEAcgBpAGMAbwBtAG8AbwBuAEcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 @font-face {
     font-family: 'source_sans_probold';
     src: url('sourcesanspro-bold-webfont.eot');
@@ -12,7 +35,6 @@
 
 }
 
-
 @font-face {
     font-family: 'source_sans_proregular';
     src: url('sourcesanspro-regular-webfont.eot');
@@ -25,6 +47,25 @@
     font-weight: normal;
     font-style: normal;
 
+}
+
+#ynhoverlay [class^="icon-"]:before, #ynhoverlay [class*=" icon-"]:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  margin-right: 0.5em;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#ynhoverlay .icon-connexion:before {
+  content: "\e600";
 }
 
 /* reset inherited style */
@@ -275,3 +316,58 @@
 #ynhoverlay .listing-apps .first-letter:before {
 	content: attr(data-first-letter);
 }    
+
+/* ==========================================================================
+   User
+   ========================================================================== */
+
+#ynhoverlay .user-container { padding: 0.4em 1em; }
+
+#ynhoverlay .user-container a { color: #FFF; }
+
+#ynhoverlay .user-container h2 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+  #ynhoverlay .user-container h2 small {
+    font-size: 0.75em;
+    font-family: 'source_sans_proregular';
+    display: block;
+    margin-top: -0.6em;
+  }
+
+#ynhoverlay .user-info { margin-left: 0.5em;}
+
+#ynhoverlay .user-mail {
+  color: #999;
+  font-size: 0.9em;
+  display: block;
+  margin-top: -0.2em;
+}
+
+#ynhoverlay .user-img {
+  margin-right: 1em;
+  border: 3px solid #FFF;
+  width: 4em;
+  height: 4em;
+  border-radius: 90px;
+  overflow: hidden;
+  margin: 0.2em auto;
+}
+
+#ynhoverlay .user-menu {
+  float: right;
+}
+  #ynhoverlay .user-menu a {
+    color: #999;
+    display: block;
+    padding: 1.25em 3em;
+    position: relative;
+            transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    z-index: 1;
+  }
+    #ynhoverlay .user-menu a:hover,
+    #ynhoverlay .user-menu a:focus {
+      color: #FFF;
+    }
