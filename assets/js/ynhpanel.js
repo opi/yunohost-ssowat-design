@@ -158,12 +158,11 @@ domReady(function(){
     console.log(response);
     // Add overlay header
     overlay.innerHTML += '<div class="header">' +
-                        '<h1>'+ response.user.name  +' <small>'+ response.user.mail +'</small></h1>' +
-                        ''  +
-                        // '<a class="account-link" href="'+ response.portal_url +'">'+ response.user.uid +'</a>' +
-                        '<a class="account-link" href="'+ response.portal_url +'edit.html">Edit</a>' +
-                        ' | <a class="logout-link" href="'+ response.portal_url +'password.html">Change password</a>' +
-                        ' | <a class="logout-link" href="'+ response.portal_url +'?action=logout">Logout</a>' +
+                          '<a class="user-img" href="edit.html"><img src="assets/img/avatar.png"></a>' +
+                          '<div class="user-info">' +
+                              '<h2><a href="'+ response.portal_url +'edit.html">'+ response.user.uid +'<small>'+ response.user.name  +'</small></</a></h2>'+
+                              '<span class="user-mail">'+ response.user.mail +'</span>'+
+                          '</div>' +
                         '</div>';
 
     // Add application links
