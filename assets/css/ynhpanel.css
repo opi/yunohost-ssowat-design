@@ -55,7 +55,7 @@
 	line-height: 1;
 
 	color: #fff;
-	font-family: 'source_sans_proregular';
+	font-family: inherit;
 	font-size: 1em; /* 100% */
 	font-style: normal;
 	font-weight: normal;
