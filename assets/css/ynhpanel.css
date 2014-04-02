@@ -53,16 +53,37 @@
   font-family: 'source_sans_probold';
 }
 
-.sourceProBlack {
+#ynhoverlay .sourceProBlack {
   font-family: 'SourceSansPro-Black';
 }
 
-.wrapper {
+#ynhoverlay .wrapper {
   width: 90%;
   margin: 2% 5%;
           transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   z-index: 10;
+}
+
+/* reset inherited style */
+#ynhoverlay * {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	text-align: left;
+	line-height: 1;
+
+	color: #fff;
+	font-family: Arial, sans-serif;
+	font-size: 1em; /* 100% */
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-shadow: none;
+
+	opacity: 1;
+	filter: alpha(opacity=100);
 }
 
 /* ******************************************************************
@@ -136,27 +157,6 @@
 	width:100%;
 	left:0;
 	opacity: 1;
-}
-
-/* reset inherited style */
-#ynhoverlay * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
-	text-align: left;
-	line-height: 1;
-
-	color: #fff;
-	font-family: Arial, sans-serif;
-	font-size: 1em; /* 100% */
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-shadow: none;
-
-	opacity: 1;
-	filter: alpha(opacity=100);
 }
 
 
