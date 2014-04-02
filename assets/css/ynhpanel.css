@@ -367,6 +367,8 @@
   border-radius: 90px;
   overflow: hidden;
   margin: 0 auto;
+  position: relative;
+  top: 3px;
 }
 
 #ynhoverlay .user-menu {

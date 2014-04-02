@@ -150,12 +150,11 @@ domReady(function(){
     overlay.setAttribute("id","ynhoverlay");
 
     // Append close button
-    var closeBtn = document.createElement("div");
+    /*var closeBtn = document.createElement("div");
     closeBtn.setAttribute("id","ynhclose");
     closeBtn.innerHTML = "X";
-    overlay.insertBefore(closeBtn, null);
+    overlay.insertBefore(closeBtn, null);*/
 
-    console.log(response);
     // Add overlay header
     overlay.innerHTML += '<div class="wrapper">' +
                           '<ul class="ul-reset user-menu"><li><a class="icon icon-connexion" href="'+ response.portal_url +'?action=logout">Logout</a></li></ul>'+
@@ -194,13 +193,13 @@ domReady(function(){
     });
 
     // Bind close button
-    window.addEvent(document.getElementById('ynhclose'), 'click', function(e){
+    /*window.addEvent(document.getElementById('ynhclose'), 'click', function(e){
       // Prevent default click
       window.eventPreventDefault(e);
       // Hide overlay
       Element.removeClass(overlay, 'visible');
       Element.removeClass(portal, 'visible');
-    });
+    });*/
 
   };
   r.send();
