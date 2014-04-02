@@ -348,8 +348,9 @@
 #ynhoverlay .user-img {
   margin-right: 1em;
   border: 3px solid #FFF;
-  width: 4em;
-  height: 4em;
+  width: 58px;
+  height: 58px;
+  display: block;
   border-radius: 90px;
   overflow: hidden;
   margin: 0.2em auto;
