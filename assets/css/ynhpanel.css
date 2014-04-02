@@ -76,7 +76,7 @@
 	vertical-align: baseline;
 	text-align: left;
 	line-height: 1;
-
+	position: static;
 	color: #fff;
 	font-family: inherit;
 	font-size: 1rem; /* 100% */
@@ -337,12 +337,11 @@
 
 #ynhoverlay .user-container a { color: #FFF; }
 
-#ynhoverlay .user-container h2 {
-  font-size: 1.5em;
-  margin-bottom: 0;
-}
+#ynhoverlay .user-container h2 { margin-bottom: 0; }
+
+	#ynhoverlay .user-container h2 a { font: 24px 'source_sans_probold'; }
   #ynhoverlay .user-container h2 small {
-    font-size: 0.75em;
+    font-size: 75%;
     font-family: 'source_sans_proregular';
     display: block;
     margin-top: -0.6em;
