@@ -45,26 +45,6 @@
 
 }
 
-#ynhoverlay .sourcePro {
-  font-family: 'source_sans_proregular';
-}
-
-#ynhoverlay .sourceProBold {
-  font-family: 'source_sans_probold';
-}
-
-#ynhoverlay .sourceProBlack {
-  font-family: 'SourceSansPro-Black';
-}
-
-#ynhoverlay .wrapper {
-  width: 90%;
-  margin: 2% 5%;
-          transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  z-index: 10;
-}
-
 /* reset inherited style */
 #ynhoverlay * {
 	margin: 0;
@@ -84,6 +64,26 @@
 
 	opacity: 1;
 	filter: alpha(opacity=100);
+}
+
+#ynhoverlay .sourcePro {
+  font-family: 'source_sans_proregular';
+}
+
+#ynhoverlay .sourceProBold {
+  font-family: 'source_sans_probold';
+}
+
+#ynhoverlay .sourceProBlack {
+  font-family: 'SourceSansPro-Black';
+}
+
+#ynhoverlay .wrapper {
+  width: 90%;
+  margin: 2% 5%;
+          transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  z-index: 10;
 }
 
 /* ******************************************************************
