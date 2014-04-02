@@ -319,6 +319,7 @@
   display: block;
   font-size: 1em;
   padding-top: 0.3em;
+  line-height: 1;
 }    
 
 #ynhoverlay .listing-apps span + span {
