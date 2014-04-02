@@ -92,6 +92,18 @@
           box-sizing: content-box;
 }
 
+#ynhoverlay .col { letter-spacing: -5px; }
+
+#ynhoverlay .col > * {
+	display: inline-block;
+	letter-spacing: normal;
+} 
+
+#ynhoverlay img {
+	max-width: 100%;
+	height: auto;
+}
+
 #ynhoverlay a { text-decoration: none; }
 
 #ynhoverlay .sourcePro {
