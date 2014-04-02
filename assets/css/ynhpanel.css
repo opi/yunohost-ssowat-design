@@ -278,6 +278,7 @@
 
 #ynhoverlay .listing-apps span {
   display: block;
+  font-size: 1em;
 }    
 
 #ynhoverlay .listing-apps span + span {
