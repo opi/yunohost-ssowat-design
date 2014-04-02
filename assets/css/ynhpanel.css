@@ -94,7 +94,7 @@
 
 #ynhoverlay .col { letter-spacing: -5px; }
 
-#ynhoverlay .col > * {
+#ynhoverlay .col > * {
 	display: inline-block;
 	letter-spacing: normal;
 } 
