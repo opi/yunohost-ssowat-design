@@ -75,7 +75,7 @@
 	line-height: 1;
 
 	color: #fff;
-	font-family: Arial, sans-serif;
+	font-family: 'source_sans_proregular';
 	font-size: 1em; /* 100% */
 	font-style: normal;
 	font-weight: normal;
@@ -277,7 +277,7 @@
 
 #ynhoverlay .listing-apps span + span {
 	font-size: 0.3em;
-  margin: -1.2em 0 0 0.2em;
+  margin-left: 0.2em;
 }
 
 #ynhoverlay .listing-apps .first-letter:before {
