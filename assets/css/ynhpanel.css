@@ -64,6 +64,9 @@
 
 	opacity: 1;
 	filter: alpha(opacity=100);
+	-webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 #ynhoverlay a { text-decoration: none; }
