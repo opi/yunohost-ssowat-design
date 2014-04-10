@@ -95,6 +95,8 @@
           box-sizing: border-box;
 }
 
+#ynhoverlay li { list-style-type: none; }
+
 #ynhoverlay .col { letter-spacing: -5px; }
 
 #ynhoverlay .col > * {
