@@ -126,8 +126,8 @@
 #ynhoverlay .wrapper {
   width: 90%;
   margin: 2% 5%;
-          transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
+          transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
   z-index: 10;
 }
 
@@ -273,8 +273,8 @@
   background: #666;
   color: #FFFFFF;
   font-size: 4em;
-          transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
+          transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
 }
   #ynhoverlay .listing-apps a:hover,
   #ynhoverlay .listing-apps a:focus {
@@ -302,8 +302,8 @@
   #ynhoverlay .listing-apps a:before {
     content: "";
     position: absolute;
-            transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
+            transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
   }
 
   #ynhoverlay .listing-apps a:before {
@@ -390,8 +390,8 @@
     display: block;
     padding: 1.25em 3em;
     position: relative;
-            transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
+            transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
     z-index: 1;
   }
     #ynhoverlay .user-menu a:hover,
@@ -405,8 +405,8 @@
 
 #ynhoverlay .listing-apps .purplebg {
     background: #9B59B6!important;
-            transition: all 0.5s ease 0s;
-    -webkit-transition: all 0.5s ease 0s;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
 }
 #ynhoverlay .purplebg:hover:after, 
 #ynhoverlay .purplebg:focus:after, 
@@ -416,8 +416,8 @@
 }
 #ynhoverlay .yellowbg {
     background: #F1C40F!important;
-            transition: all 0.5s ease 0s;
-    -webkit-transition: all 0.5s ease 0s;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
 }
 #ynhoverlay .yellowbg:hover:after, 
 #ynhoverlay .yellowbg:focus:after, 
@@ -427,8 +427,8 @@
 }
 #ynhoverlay .pinkbg {
     background: #D66D92!important;
-            transition: all 0.5s ease 0s;
-    -webkit-transition: all 0.5s ease 0s;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
 }
 #ynhoverlay .pinkbg:hover:after, 
 #ynhoverlay .pinkbg:focus:after, 
@@ -438,8 +438,8 @@
 }
 #ynhoverlay .orangebg {
     background: #F39C12!important;
-            transition: all 0.5s ease 0s;
-    -webkit-transition: all 0.5s ease 0s;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
 }
 #ynhoverlay .orangebg:hover:after, 
 #ynhoverlay .orangebg:focus:after, 
@@ -449,8 +449,8 @@
 }
 #ynhoverlay .redbg {
     background: #E74C3C!important;
-            transition: all 0.5s ease 0s;
-    -webkit-transition: all 0.5s ease 0s;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
 }
 #ynhoverlay .redbg:hover:after, 
 #ynhoverlay .redbg:focus:after, 
@@ -460,8 +460,8 @@
 }
 #ynhoverlay .turquoisebg {
     background: #1ABC9C!important;
-            transition: all 0.5s ease 0s;
-    -webkit-transition: all 0.5s ease 0s;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
 }
 #ynhoverlay .turquoisebg:hover:after, 
 #ynhoverlay .turquoisebg:focus:after, 
@@ -471,8 +471,8 @@
 }
 #ynhoverlay .bluebg {
     background: #3498DB!important;
-            transition: all 0.5s ease 0s;
-    -webkit-transition: all 0.5s ease 0s;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
 }
 #ynhoverlay .bluebg:hover:after, 
 #ynhoverlay .bluebg:focus:after, 
@@ -482,8 +482,8 @@
 }
 #ynhoverlay .greenbg {
     background: #2ECC71!important;
-            transition: all 0.5s ease 0s;
-    -webkit-transition: all 0.5s ease 0s;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
 }
 #ynhoverlay .greenbg:hover:after, 
 #ynhoverlay .greenbg:focus:after, 
@@ -493,8 +493,8 @@
 }
 #ynhoverlay .darkbluebg {
     background: #34495E!important;
-            transition: all 0.5s ease 0s;
-    -webkit-transition: all 0.5s ease 0s;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
 }
 #ynhoverlay .darkbluebg:hover:after, 
 #ynhoverlay .darkbluebg:focus:after, 
@@ -504,8 +504,8 @@
 }
 #ynhoverlay .lightbluebg {
     background: #6A93D4!important;
-            transition: all 0.5s ease 0s;
-    -webkit-transition: all 0.5s ease 0s;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
 }
 #ynhoverlay .lightbluebg:hover:after, 
 #ynhoverlay .lightbluebg:focus:after, 
@@ -515,8 +515,8 @@
 }
 #ynhoverlay .lightpinkbg {
     background: #F76F87!important;
-            transition: all 0.5s ease 0s;
-    -webkit-transition: all 0.5s ease 0s;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
 }
 #ynhoverlay .lightpinkbg:hover:after, 
 #ynhoverlay .lightpinkbg:focus:after, 
@@ -526,8 +526,8 @@
 }
 #ynhoverlay .lightyellow {
     background: #FFC973!important;
-            transition: all 0.5s ease 0s;
-    -webkit-transition: all 0.5s ease 0s;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
 }
 #ynhoverlay .lightyellow:hover:after, 
 #ynhoverlay .lightyellow:focus:after, 
@@ -537,8 +537,8 @@
 }
 #ynhoverlay .lightgreen {
     background: #B5F36D!important;
-            transition: all 0.5s ease 0s;
-    -webkit-transition: all 0.5s ease 0s;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
 }
 #ynhoverlay .lightgreen:hover:after, 
 #ynhoverlay .lightgreen:focus:after, 
@@ -548,8 +548,8 @@
 }
 #ynhoverlay .purpledarkbg {
     background: #8E44AD!important;
-            transition: all 0.5s ease 0s;
-    -webkit-transition: all 0.5s ease 0s;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
 }
 #ynhoverlay .purpledarkbg:hover:after, 
 #ynhoverlay .purpledarkbg:focus:after, 
