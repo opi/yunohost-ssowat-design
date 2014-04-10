@@ -135,6 +135,9 @@ domReady(function(){
   portal.setAttribute('href', '/ynhsso/');
   document.body.insertBefore(portal, null);
 
+  //Color Application
+  var color = ['bluebg','purplebg','redbg','orangebg','greenbg','darkbluebg','lightbluebg','yellowbg','lightpinkbg'];
+
   // Get user's app
   var r = new XMLHttpRequest();
   r.open("GET", "/ynhpanel.json", true);
@@ -170,6 +173,7 @@ domReady(function(){
     // Add application links
     var links = [];
     Array.each(response.app, function(app){
+      console.log(app);
       links.push('<li><a href="//'+app.url+'"><span class="first-letter" data-first-letter="'+ app.name.substr(0,2) +'"></span><span class="sourcePro">'+app.name+'</span></a></li>');
     });
     overlay.innerHTML += '<div id="apps" class="wrapper apps"><ul class="ul-reset listing-apps col colNomarge sourceProBold">'+ links.join('') +'</ul></div>';
