@@ -136,7 +136,7 @@ domReady(function(){
   document.body.insertBefore(portal, null);
 
   //Color Application
-  var color = ['bluebg','purplebg','redbg','orangebg','greenbg','darkbluebg','lightbluebg','yellowbg','lightpinkbg'];
+  var colors = ['bluebg','purplebg','redbg','orangebg','greenbg','darkbluebg','lightbluebg','yellowbg','lightpinkbg'];
 
   // Get user's app
   var r = new XMLHttpRequest();
@@ -172,8 +172,8 @@ domReady(function(){
 
     // Add application links
     var links = [];
-    Array.forEach(response.app, function(app, number){
-      console.log(number);
+    Array.forEach(response.app, function(app, n){
+      console.log(colors[n]);
       links.push('<li><a href="//'+app.url+'"><span class="first-letter" data-first-letter="'+ app.name.substr(0,2) +'"></span><span class="sourcePro">'+app.name+'</span></a></li>');
     });
     overlay.innerHTML += '<div id="apps" class="wrapper apps"><ul class="ul-reset listing-apps col colNomarge sourceProBold">'+ links.join('') +'</ul></div>';
