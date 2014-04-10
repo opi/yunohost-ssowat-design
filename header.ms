@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="assets/css/artichaut-buttons.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/ynh-style.css">
-    <script src="assets/js/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 

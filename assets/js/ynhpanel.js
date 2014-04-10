@@ -152,6 +152,7 @@ domReady(function(){
     var overlay = document.createElement("div");
     overlay.setAttribute("id","ynhoverlay");
 
+    document.body.insertBefore(overlay, null);
     // Append close button
     /*var closeBtn = document.createElement("div");
     closeBtn.setAttribute("id","ynhclose");
@@ -161,7 +162,7 @@ domReady(function(){
     // Add overlay header
     overlay.innerHTML += '<div class="wrapper">' +
                           '<ul class="ul-reset user-menu"><li><a class="icon icon-connexion" href="'+ response.portal_url +'?action=logout">Logout</a></li></ul>'+
-                          '<div class="user-container col colNomarge">'+
+                          '<div id="yuno-user" class="user-container col colNomarge">'+
                             '<a class="user-img" href="'+ response.portal_url +'edit.html"><img src="'+ response.portal_url +'assets/img/avatar.png"></a>' +
                             '<div class="user-info">' +
                                 '<h2><a href="'+ response.portal_url +'edit.html">'+ response.user.uid +'<small>'+ response.user.name  +'</small></</a></h2>'+
@@ -175,15 +176,39 @@ domReady(function(){
     Array.prototype.forEach.call(response.app, function(app, n){
       links.push('<li><a class="'+colors[n]+'" href="//'+app.url+'"><span class="first-letter" data-first-letter="'+ app.name.substr(0,2) +'"></span><span class="sourcePro">'+app.name+'</span></a></li>');
     });
-    overlay.innerHTML += '<div id="apps" class="wrapper apps"><ul class="ul-reset listing-apps col colNomarge sourceProBold">'+ links.join('') +'</ul></div>';
+    overlay.innerHTML += '<div id="yuno-apps" class="wrapper apps"><ul class="ul-reset listing-apps col colNomarge sourceProBold">'+ links.join('') +'</ul></div>';
 
     // Add overlay to DOM
-    document.body.insertBefore(overlay, null);
+    
     var ynhssoPath = window.location.pathname;
 
     if(ynhssoPath == '/ynhsso/') {
       Element.toggleClass(overlay, 'visible');
       Element.toggleClass(portal, 'visible');
+    }
+
+    var btn = document.getElementById('logo'),
+        yunoverlay = document.getElementById('ynhoverlay'),
+        user = document.getElementById('yuno-user'),
+        apps = document.getElementById('yuno-apps');
+      
+      /*var btnApps = document.querySelectorAll('.btnClick');
+      var closeBtn = document.querySelectorAll('.close');
+      Array.prototype.forEach.call(btnApps, function(el) {
+        el.addEventListener('click', function(e){
+          e.preventDefault();
+          var link = this.getAttribute('data-id');
+          
+          //overlay.classList.add(link);
+        })
+      })*/
+    
+    var pfx = ["webkit", "moz", "MS", "o", ""];
+    function PrefixedEvent(element, type, callback) {
+      for (var p = 0; p < pfx.length; p++) {
+        if (!pfx[p]) type = type.toLowerCase();
+        element.addEventListener(pfx[p]+type, callback, false);
+      }
     }
 
     // Bind YNH Button
@@ -193,6 +218,24 @@ domReady(function(){
       // Toggle overlay on YNHPortal button
       Element.toggleClass(overlay, 'visible');
       Element.toggleClass(portal, 'visible');
+
+      if(yunoverlay.classList.contains('active')) {
+          yunoverlay.classList.add('fadeOut');
+          PrefixedEvent(yunoverlay, "AnimationEnd", function(){
+            if(yunoverlay.classList.contains('fadeOut')) {
+              yunoverlay.classList.remove('active');
+            }
+          });
+          apps.classList.remove('fadeIn', 'delay');
+          apps.classList.remove('fadeInLeft', 'delay');
+          user.classList.remove('slideintop');
+        }else {
+          yunoverlay.classList.remove('fadeOut');
+          yunoverlay.classList.add('active');
+          
+          apps.classList.add('fadeInLeft', 'delay');
+          user.classList.add('slideintop');
+        }
     });
 
     // Bind close button
