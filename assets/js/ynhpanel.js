@@ -219,7 +219,7 @@ domReady(function(){
       Element.toggleClass(overlay, 'visible');
       Element.toggleClass(portal, 'visible');
 
-      if(yunoverlay.classList.contains('active')) {
+      if(yunoverlay.classList.contains('yuno-active')) {
           yunoverlay.classList.add('yuno-fadeOut');
           PrefixedEvent(yunoverlay, "AnimationEnd", function(){
             if(yunoverlay.classList.contains('yuno-fadeOut')) {
