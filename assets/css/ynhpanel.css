@@ -179,7 +179,6 @@
 	text-align: left;
 	overflow-y: auto;
 	padding: 2%;
-	opacity: 0;
 	
 	color:#fff;
 	background: #41444F;
@@ -192,6 +191,8 @@
 	-webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+          transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
 
 	/*
 	-webkit-transition: opacity .15s ease-in-out;
