@@ -171,7 +171,7 @@
 	position: absolute;
 	top:0;
 	bottom:0;
-	left: 96%; /* this is the trick ! */
+	/*left: 96%;  this is the trick ! */
 	right: 0;
 	width: 0;
 	height: 100%;
@@ -201,11 +201,11 @@
     transition: opacity .15s ease-in-out;
 	*/
 }
-#ynhoverlay.visible {
+/*#ynhoverlay.visible {
 	width:100%;
 	left:0;
 	opacity: 1;
-}
+}*/
 
 
 /* Close button */

@@ -183,7 +183,7 @@ domReady(function(){
     var ynhssoPath = window.location.pathname;
 
     if(ynhssoPath == '/ynhsso/') {
-      Element.toggleClass(overlay, 'visible');
+      //Element.toggleClass(overlay, 'visible');
       Element.toggleClass(portal, 'visible');
     }
 
@@ -216,7 +216,7 @@ domReady(function(){
       // Prevent default click
       window.eventPreventDefault(e);
       // Toggle overlay on YNHPortal button
-      Element.toggleClass(overlay, 'visible');
+      //Element.toggleClass(overlay, 'visible');
       Element.toggleClass(portal, 'visible');
 
       if(yunoverlay.classList.contains('yuno-active')) {
