@@ -220,21 +220,21 @@ domReady(function(){
       Element.toggleClass(portal, 'visible');
 
       if(yunoverlay.classList.contains('active')) {
-          yunoverlay.classList.add('fadeOut');
+          yunoverlay.classList.add('yuno-fadeOut');
           PrefixedEvent(yunoverlay, "AnimationEnd", function(){
-            if(yunoverlay.classList.contains('fadeOut')) {
-              yunoverlay.classList.remove('active');
+            if(yunoverlay.classList.contains('yuno-fadeOut')) {
+              yunoverlay.classList.remove('yuno-active');
             }
           });
-          apps.classList.remove('fadeIn', 'delay');
-          apps.classList.remove('fadeInLeft', 'delay');
-          user.classList.remove('slideintop');
+          apps.classList.remove('yuno-fadeIn', 'yuno-delay');
+          apps.classList.remove('yuno-fadeInLeft', 'yuno-delay');
+          user.classList.remove('yuno-slideintop');
         }else {
-          yunoverlay.classList.remove('fadeOut');
-          yunoverlay.classList.add('active');
+          yunoverlay.classList.remove('yuno-fadeOut');
+          yunoverlay.classList.add('yuno-active');
           
-          apps.classList.add('fadeInLeft', 'delay');
-          user.classList.add('slideintop');
+          apps.classList.add('yuno-fadeInLeft', 'yuno-delay');
+          user.classList.add('yuno-slideintop');
         }
     });
 
