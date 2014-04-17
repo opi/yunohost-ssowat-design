@@ -110,6 +110,10 @@ textarea {
 
 .apps { margin: 4% 5%; }
 
+.apps a:before {
+  content: attr(data-first-letter);
+}
+
 .listing-apps li {
   margin: 0 0 1em 1em;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), 
