@@ -4,6 +4,7 @@
    2 = Apps
    3 = User
    4 = Login Form
+   5 = Colors
    ========================================================================== */
 
 /* ==========================================================================
@@ -287,3 +288,162 @@ textarea {
     padding: 0.8em 0.8em 0.8em 3em;
     width: 100%;
   }
+
+/* ==========================================================================
+   5 = Colors
+   ========================================================================== */
+
+.listing-apps .purplebg {
+    background: #9B59B6!important;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+}
+.purplebg:hover:after, 
+.purplebg:focus:after, 
+.purplebg:hover:before, 
+.purplebg:focus:before {
+    background: #532C64!important;
+}
+.yellowbg {
+    background: #F1C40F!important;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+}
+.yellowbg:hover:after, 
+.yellowbg:focus:after, 
+.yellowbg:hover:before, 
+.yellowbg:focus:before {
+    background: #796307!important;
+}
+.pinkbg {
+    background: #D66D92!important;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+}
+.pinkbg:hover:after, 
+.pinkbg:focus:after, 
+.pinkbg:hover:before, 
+.pinkbg:focus:before {
+    background: #992B52!important;
+}
+.orangebg {
+    background: #F39C12!important;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+}
+.orangebg:hover:after, 
+.orangebg:focus:after, 
+.orangebg:hover:before, 
+.orangebg:focus:before {
+    background: #7F5006!important;
+}
+.redbg {
+    background: #E74C3C!important;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+}
+.redbg:hover:after, 
+.redbg:focus:after, 
+.redbg:hover:before, 
+.redbg:focus:before {
+    background: #921E12!important;
+}
+.turquoisebg {
+    background: #1ABC9C!important;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+}
+.turquoisebg:hover:after, 
+.turquoisebg:focus:after, 
+.turquoisebg:hover:before, 
+.turquoisebg:focus:before {
+    background: #0B4C3F!important;
+}
+.bluebg {
+    background: #3498DB!important;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+}
+.bluebg:hover:after, 
+.bluebg:focus:after, 
+.bluebg:hover:before, 
+.bluebg:focus:before {
+    background: #16527A!important;
+}
+.greenbg {
+    background: #2ECC71!important;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+}
+.greenbg:hover:after, 
+.greenbg:focus:after, 
+.greenbg:hover:before, 
+.greenbg:focus:before {
+    background: #176437!important;
+}
+.darkbluebg {
+    background: #34495E!important;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+}
+.darkbluebg:hover:after, 
+.darkbluebg:focus:after, 
+.darkbluebg:hover:before, 
+.darkbluebg:focus:before {
+    background: #07090C!important;
+}
+.lightbluebg {
+    background: #6A93D4!important;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+}
+.lightbluebg:hover:after, 
+.lightbluebg:focus:after, 
+.lightbluebg:hover:before, 
+.lightbluebg:focus:before {
+    background: #2B5394!important;
+}
+.lightpinkbg {
+    background: #F76F87!important;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+}
+.lightpinkbg:hover:after, 
+.lightpinkbg:focus:after, 
+.lightpinkbg:hover:before, 
+.lightpinkbg:focus:before {
+    background: #DA0C31!important;
+}
+.lightyellow {
+    background: #FFC973!important;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+}
+.lightyellow:hover:after, 
+.lightyellow:focus:after, 
+.lightyellow:hover:before, 
+.lightyellow:focus:before {
+    background: #F39500!important;
+}
+.lightgreen {
+    background: #B5F36D!important;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+}
+.lightgreen:hover:after, 
+.lightgreen:focus:after, 
+.lightgreen:hover:before, 
+.lightgreen:focus:before {
+    background: #77CF11!important;
+}
+.purpledarkbg {
+    background: #8E44AD!important;
+            transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+}
+.purpledarkbg:hover:after, 
+.purpledarkbg:focus:after, 
+.purpledarkbg:hover:before, 
+.purpledarkbg:focus:before {
+    background: #432051!important;
+}
