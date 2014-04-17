@@ -110,7 +110,7 @@ textarea {
 
 .apps { margin: 4% 5%; }
 
-.apps a:before {
+.first-letter:before {
   content: attr(data-first-letter);
 }
 
