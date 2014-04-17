@@ -6,6 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
         splitText = text.split("");
 
     el.classList.add(colors[i]);
-    el.setAttribute('data-first-letter',splitText[0]+splitText[1]);
+    el.querySelector('.first-letter').setAttribute('data-first-letter',splitText[0]+splitText[1]);
   });
 });
