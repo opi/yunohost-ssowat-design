@@ -188,7 +188,7 @@ textarea {
   display: block;
   margin: -1.2em 0 0 0.2em;
 }    
-  .listing-apps .first-letter { margin-top: 0; }
+  .listing-apps .first-letter { margin: 0; }
   .listing-apps span + span { font-size: 0.3em; }
 
 /* ==========================================================================
