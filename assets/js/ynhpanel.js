@@ -138,6 +138,7 @@ domReady(function(){
   // Create overlay element
   var overlay = document.createElement("div");
   overlay.setAttribute("id","ynhoverlay");
+  overlay.setAttribute("style","display:none");
 
   document.body.insertBefore(overlay, null);
 
