@@ -203,7 +203,7 @@
 	*/
 }
 #ynhoverlay.yuno-active {
-	display: block;
+	display: block!important;
 }
 
 
