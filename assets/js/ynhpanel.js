@@ -135,6 +135,12 @@ domReady(function(){
   portal.setAttribute('href', '/ynhsso/');
   document.body.insertBefore(portal, null);
 
+  // Create overlay element
+  var overlay = document.createElement("div");
+  overlay.setAttribute("id","ynhoverlay");
+
+  document.body.insertBefore(overlay, null);
+
   //Color Application
   var colors = ['bluebg','purplebg','redbg','orangebg','greenbg','darkbluebg','lightbluebg','yellowbg','lightpinkbg'];
 
@@ -148,11 +154,6 @@ domReady(function(){
     // Response is JSON
     response = JSON.parse(r.responseText);
 
-    // Create overlay element
-    var overlay = document.createElement("div");
-    overlay.setAttribute("id","ynhoverlay");
-
-    document.body.insertBefore(overlay, null);
     // Append close button
     /*var closeBtn = document.createElement("div");
     closeBtn.setAttribute("id","ynhclose");
