@@ -39,6 +39,11 @@ h6 {
   font-family: 'SourceSansPro-Black';
 }
 
+.inner {
+  max-width: 70em;
+  margin: auto;
+}
+
 .wrapper {
   width: 90%;
   margin: 2% 5%;
