@@ -28,6 +28,10 @@ h6 {
   font-weight: normal;
 }
 
+.cwhite {
+  color: #FFF;
+}
+
 .sourcePro {
   font-family: 'source_sans_proregular';
 }
@@ -472,7 +476,6 @@ input:disabled {
    6 = Form Edit
    ========================================================================== */
 
-.form-edit h1,
 .form-edit h2 {
   color: #FFF;
 }
