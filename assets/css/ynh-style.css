@@ -306,7 +306,7 @@ textarea {
   }
 
 input:disabled {
-  cursor: crosshair;
+  cursor: not-allowed;
 }
 
 /* ==========================================================================
@@ -494,6 +494,10 @@ input:disabled {
   color: #FFFFFF;
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
   border: 3px solid #FFFFFF;
+}
+
+.form-edit .form-text:disabled {
+  color: #999;
 }
 
 .form-edit .btn {
