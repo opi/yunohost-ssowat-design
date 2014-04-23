@@ -503,5 +503,10 @@ input:disabled {
   color: #999;
 }
 
-.form-edit .btn {
+.form-disabled .form-text {
+  border-color:#999;
+}
+
+.form-disabled label {
+  background: #999;
 }
