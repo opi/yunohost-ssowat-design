@@ -468,6 +468,11 @@ textarea {
    6 = Form Edit
    ========================================================================== */
 
+.form-edit h1,
+.form-edit h2 {
+  color: #FFF;
+}
+
 .form-edit .form-group { background: none; }
 
 .form-edit label {
