@@ -473,7 +473,10 @@ textarea {
   color: #FFF;
 }
 
-.form-edit .form-group { background: none; }
+.form-edit .form-group {
+  background: none;
+  overflow: hidden;
+}
 
 .form-edit label {
   padding: 0.3em 1em;
@@ -489,5 +492,6 @@ textarea {
   border: 3px solid #FFFFFF;
 }
 
-.form-edit .form-text:required {
+.form-edit .btn {
+  float: right;
 }
