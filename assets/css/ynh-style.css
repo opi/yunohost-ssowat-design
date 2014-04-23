@@ -483,3 +483,7 @@ textarea {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
   border: 3px solid #FFFFFF;
 }
+
+.form-edit .form-text:required {
+  border-color: #E74C3C;
+}
