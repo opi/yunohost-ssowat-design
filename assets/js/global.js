@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   addMailAlias.addEventListener('click', function(){
-    var inputAlias = document.querySelector('.mailalias-input').firstChild;
+    var inputAlias = document.querySelector('.mailalias-input');
     console.log(inputAlias);
     /*var inputAlias = document.querySelector('.mailalias-input:first');
     this.insertBefore(inputAlias.cloneNode(true), null);*/
