@@ -12,14 +12,16 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   addMailAlias.addEventListener('click', function(){
-    console.log('test');
+    var inputAlias = document.querySelector('.mailalias-input:first');
+    console.log(inputAlias);
     /*var inputAlias = document.querySelector('.mailalias-input:first');
     this.insertBefore(inputAlias.cloneNode(true), null);*/
   });
 
   addMaildrop.addEventListener('click', function(){
-    console.log('test');
-    /*var inputDrop = document.querySelector('.maildrop-input:first');
+    var inputDrop = document.querySelector('.maildrop-input:first');
+    console.log(inputDrop);
+    /*
     this.insertBefore(inputDrop.cloneNode(true), null);*/
   });
 });
