@@ -13,13 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   addMailAlias.addEventListener('click', function(){
     var inputAlias = document.querySelector('.mailalias-input');
-    console.log(inputAlias);
-    this.insertBefore(inputAlias.cloneNode(true), null);
+    this.insertBefore(inputAlias.cloneNode(true), inputAlias);
   });
 
   addMaildrop.addEventListener('click', function(){
     var inputDrop = document.querySelector('.maildrop-input');
-    console.log(inputDrop);
-    this.insertBefore(inputDrop.cloneNode(true), null);
+    this.insertBefore(inputDrop.cloneNode(true), inputDrop);
   });
 });
