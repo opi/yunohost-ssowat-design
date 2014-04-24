@@ -14,14 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
   addMailAlias.addEventListener('click', function(){
     var inputAlias = document.querySelector('.mailalias-input');
     console.log(inputAlias);
-    /*var inputAlias = document.querySelector('.mailalias-input:first');
-    this.insertBefore(inputAlias.cloneNode(true), null);*/
+    this.insertBefore(inputAlias.cloneNode(true), null);
   });
 
   addMaildrop.addEventListener('click', function(){
-    var inputDrop = document.querySelector('.maildrop-input').firstChild;
+    var inputDrop = document.querySelector('.maildrop-input');
     console.log(inputDrop);
-    /*
-    this.insertBefore(inputDrop.cloneNode(true), null);*/
+    this.insertBefore(inputDrop.cloneNode(true), null);
   });
 });
