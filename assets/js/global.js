@@ -12,14 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   addMailAlias.addEventListener('click', function(){
-    var inputAlias = document.querySelector('.mailalias-input:first');
+    var inputAlias = document.querySelector('.mailalias-input').firstChild;
     console.log(inputAlias);
     /*var inputAlias = document.querySelector('.mailalias-input:first');
     this.insertBefore(inputAlias.cloneNode(true), null);*/
   });
 
   addMaildrop.addEventListener('click', function(){
-    var inputDrop = document.querySelector('.maildrop-input:first');
+    var inputDrop = document.querySelector('.maildrop-input').firstChild;
     console.log(inputDrop);
     /*
     this.insertBefore(inputDrop.cloneNode(true), null);*/
