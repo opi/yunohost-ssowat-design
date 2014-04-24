@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   addMailAlias.addEventListener('click', function(){
     var inputAlias = document.querySelector('.mailalias-input');
-    formMailAlias.insertBefore(inputAlias.cloneNode(true)+'</br></br>', null);
+    formMailAlias.insertBefore(inputAlias.cloneNode(true), null);
   });
 
   addMaildrop.addEventListener('click', function(){
     var inputDrop = document.querySelector('.maildrop-input');
-    formMailDrop.insertBefore(inputDrop.cloneNode(true)+'</br></br>', null);
+    formMailDrop.insertBefore(inputDrop.cloneNode(true), null);
   });
 });
