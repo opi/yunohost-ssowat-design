@@ -41,19 +41,3 @@
         </div>
     </form>
 </div>
-<script type="text/javascript">
-$( document ).ready(function() {
-  $("#add-mailalias").show();
-  $("#add-maildrop").show();
-  $(".mailalias-input").hide();
-  $(".maildrop-input").hide();
-  $("#add-mailalias a").on("click", function() {
-      $("#add-mailalias").before($(".mailalias-input:first").clone().show());
-      $("#add-mailalias").before("<br><br>");
-  });
-  $("#add-maildrop a").on("click", function() {
-      $("#add-maildrop").before($(".maildrop-input:first").clone().show());
-      $("#add-maildrop").before("<br><br>");
-  });
-});
-</script>

@@ -309,7 +309,7 @@ textarea {
     width: 100%;
   }
 
-.form-disabled {
+input:disabled {
   cursor: not-allowed;
 }
 
