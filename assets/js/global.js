@@ -2,7 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
   var liMenu = document.querySelectorAll('#apps a'),
       colors = ['bluebg','purplebg','redbg','orangebg','greenbg','darkbluebg','lightbluebg','yellowbg','lightpinkbg'],
       addMailAlias = document.getElementById('add-mailalias'),
-      addMaildrop = document.getElementById('add-maildrop');
+      addMaildrop = document.getElementById('add-maildrop'),
+      formMailAlias = document.getElementById('form-add-mail-alias'),
+      formMailDrop = document.getElementById('form-add-mail-drop');
+
   [].forEach.call(liMenu, function(el, i) {
     var text = el.textContent,
         splitText = text.split("");
@@ -13,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   addMailAlias.addEventListener('click', function(){
     var inputAlias = document.querySelector('.mailalias-input');
-    inputAlias.insertAdjacentHTML('beforebegin', inputAlias.cloneNode(true));
+    formMailAlias.insertBefore(inputAlias.cloneNode(true), null);
   });
 
   addMaildrop.addEventListener('click', function(){
     var inputDrop = document.querySelector('.maildrop-input');
-    inputDrop.insertAdjacentHTML('beforebegin', inputDrop.cloneNode(true));
+    formMailAlias.insertBefore(inputDrop.cloneNode(true), null);
   });
 });

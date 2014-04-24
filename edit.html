@@ -18,7 +18,7 @@
             <input type="email"  id="mail" name="mail" class="form-control form-text" value="{{mail}}" required>
         </div>
         <h2>Aliases</h2>
-        <div class="form-group">
+        <div class="form-group" id="form-add-mail-alias">
             {{#mailalias}}
             <input type="email" name="mailalias[]" class="form-control form-text" value="{{.}}">
             <br>
@@ -27,7 +27,7 @@
             <a class="btn classic-btn" id="add-mailalias">Ajouter un alias de mail</a>
         </div>
         <h2>Forward</h2>
-        <div class="form-group">
+        <div class="form-group" id="form-add-mail-drop">
             {{#maildrop}}
             <input type="email" name="maildrop[]" class="form-control form-text" value="{{.}}">
             <br>
