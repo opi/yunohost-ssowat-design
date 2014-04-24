@@ -509,6 +509,11 @@ textarea {
 
 .form-edit .form-group .btn {
   float: right;
+  cursor: pointer;
+}
+
+.form-edit input[type="submit"] {
+  padding: 0.67em 1em;
 }
 
 .form-disabled label {
