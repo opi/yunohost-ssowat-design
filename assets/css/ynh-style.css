@@ -476,9 +476,7 @@ input:disabled {
    6 = Form Edit
    ========================================================================== */
 
-.form-edit h2 {
-  color: #FFF;
-}
+.form-edit h2 { color: #FFF; }
 
 .form-edit .form-group {
   background: none;
@@ -499,23 +497,25 @@ input:disabled {
   border: 3px solid #FFFFFF;
 }
 
-.form-edit .form-text:disabled {
-  color: #999;
-}
+.form-edit .form-text:disabled { color: #999; }
 
-.form-disabled .form-text {
-  border-color:#999;
-}
+.form-disabled .form-text { border-color:#999; }
 
 .form-edit .form-group .btn {
   float: right;
   cursor: pointer;
 }
 
-.form-edit input[type="submit"] {
-  padding: 0.67em 1em;
+.form-edit input[type="submit"] { padding: 0.67em 1em; }
+
+.form-disabled label { background: #999; }
+
+#form-add-mail-alias .mailalias-input:first-child,
+#form-add-mail-drop .maildrop-input:first-child, {
+  margin-top: 1.5em;
 }
 
-.form-disabled label {
-  background: #999;
+#form-add-mail-alias .mailalias-input,
+#form-add-mail-drop .maildrop-input {
+  margin-top: 1.5em;
 }
