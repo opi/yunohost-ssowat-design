@@ -511,7 +511,7 @@ input:disabled {
 .form-disabled label { background: #999; }
 
 #form-add-mail-alias .mailalias-input:first-child,
-#form-add-mail-drop .maildrop-input:first-child, {
+#form-add-mail-drop .maildrop-input:first-child {
   margin-top: 1.5em;
 }
 
