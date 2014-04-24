@@ -506,8 +506,6 @@ input:disabled {
   cursor: pointer;
 }
 
-.form-edit input[type="submit"] { padding: 0.67em 1em; }
-
 .form-disabled label { background: #999; }
 
 #form-add-mail-alias .mailalias-input:first-child,
