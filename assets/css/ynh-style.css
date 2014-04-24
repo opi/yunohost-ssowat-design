@@ -309,7 +309,7 @@ textarea {
     width: 100%;
   }
 
-input:disabled {
+.form-disabled {
   cursor: not-allowed;
 }
 
@@ -505,6 +505,10 @@ input:disabled {
 
 .form-disabled .form-text {
   border-color:#999;
+}
+
+.form-edit .form-group .btn {
+  float: right;
 }
 
 .form-disabled label {
