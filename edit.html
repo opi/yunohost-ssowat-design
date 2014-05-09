@@ -17,24 +17,32 @@
             <label for="mail" class="control-label">Mail</label>
             <input type="email"  id="mail" name="mail" class="form-control form-text" value="{{mail}}" required>
         </div>
-        <h2>Aliases</h2>
-        <div class="form-group" id="form-add-mail-alias">
-            {{#mailalias}}
-            <input type="email" name="mailalias[]" class="form-control form-text" value="{{.}}">
-            <br>
-            {{/mailalias}}
-            <input type="email" name="mailalias[]" class="form-control mailalias-input form-text" placeholder="newalias@mydomain.org">
-            <a class="btn classic-btn" id="add-mailalias">Add a mail alias</a>
+        <div class="col col2 colMarge">
+            <div>
+                <h2>Aliases</h2>
+                <div class="form-group" id="form-add-mail-alias">
+                    {{#mailalias}}
+                    <input type="email" name="mailalias[]" class="form-control form-text" value="{{.}}">
+                    <br>
+                    {{/mailalias}}
+                    <input type="email" name="mailalias[]" class="form-control mailalias-input form-text" placeholder="newalias@mydomain.org">
+                    <a class="btn classic-btn" id="add-mailalias">Add a mail alias</a>
+                </div>
+            </div>
+            <div>
+                <h2>Forward</h2>
+                <div class="form-group" id="form-add-mail-drop">
+                    {{#maildrop}}
+                    <input type="email" name="maildrop[]" class="form-control form-text" value="{{.}}">
+                    <br>
+                    {{/maildrop}}
+                    <input type="email" name="maildrop[]" class="form-control maildrop-input form-text" placeholder="newforward@myforeigndomain.org">
+                    <a class="btn classic-btn" id="add-maildrop">Add a mail forward</a>
+                </div>
+            </div>
         </div>
-        <h2>Forward</h2>
-        <div class="form-group" id="form-add-mail-drop">
-            {{#maildrop}}
-            <input type="email" name="maildrop[]" class="form-control form-text" value="{{.}}">
-            <br>
-            {{/maildrop}}
-            <input type="email" name="maildrop[]" class="form-control maildrop-input form-text" placeholder="newforward@myforeigndomain.org">
-            <a class="btn classic-btn" id="add-maildrop">Add a mail forward</a>
-        </div>
+        
+        
         <div class="grp-btn">
             <input type="submit" class="btn classic-btn" value="OK">
             <a href="info.html" class="btn">Cancel</a>
