@@ -15,15 +15,15 @@
 
   <div class="overlay">
     {{#flash_win}}
-    <div class="box messages success">{{.}}</div>
+    <div class="box messages success inner">{{.}}</div>
     {{/flash_win}}
 
     {{#flash_fail}}
-    <div class="box messages danger">{{.}}</div>
+    <div class="box messages danger inner">{{.}}</div>
     {{/flash_fail}}
 
     {{#flash_info}}
-    <div class="box messages info">{{.}}</div>
+    <div class="box messages info inner">{{.}}</div>
     {{/flash_info}}
 
     
