@@ -516,10 +516,7 @@ input:disabled {
   padding: 0.8em;
 }
 
-.form-edit .form-text:disabled {
-  background: rgba(0, 0, 0, 0.1);
-  color: rgba(255, 255, 255, 0.5);
-}
+.form-edit .form-text:disabled { color: #999; }
 
 .form-disabled .form-text { border-color:#999; }
 
@@ -528,7 +525,10 @@ input:disabled {
   cursor: pointer;
 }
 
-.form-disabled label { background: #999; }
+.form-disabled label {
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+}
 
 #form-add-mail-alias .mailalias-input:first-child,
 #form-add-mail-drop .maildrop-input:first-child {
