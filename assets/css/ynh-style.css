@@ -73,6 +73,12 @@ body {
 .messages {
   max-width: none;
   text-align: center;
+  width: 21em;
+  margin: 2% auto;
+  padding: 1.5em 0;
+}
+
+.logged .messages {
   width: 90%;
   margin: 2% 5%;
   padding: 1.5em 15%;
