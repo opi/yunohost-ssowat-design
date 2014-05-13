@@ -1,13 +1,13 @@
-
-<form name="input" action="" method="post" class="login-form sourcePro">
-  <h1 class="logo-login"><img src="assets/img/logo-ynh-white.svg" width="140"/><span class="element-invisible">Yunohost</span></h1>
+<div class="wrapper login">
+<form class="login-form" name="input" action="" method="post">
   <div class="form-group">
     <label class="icon icon-user" for="user"><span class="element-invisible">Username</span></label>
-    <input id="user" type="text" name="user" placeholder="Username" class="form-control form-text">
+    <input id="user" type="text" name="user" placeholder="Username" class="form-control form-text" required>
   </div>
   <div class="form-group">
     <label class="icon icon-lock" for="password"><span class="element-invisible">Password</span></label>
-    <input id="password" type="password" name="password" placeholder="Password" class="form-control form-text">
+    <input id="password" type="password" name="password" placeholder="Password" class="form-control form-text" required>
   </div>
-  <input type="submit" value="Login" class="btn classic-btn">
+  <input type="submit" value="Login" class="btn classic-btn large-btn">
 </form>
+</div>

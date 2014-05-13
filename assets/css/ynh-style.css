@@ -14,7 +14,60 @@
 
 body {
   background: #41444F;
+  font-family: 'source_sans_proregular';
+  overflow-y: scroll;
 }
+
+
+/* Layout */
+
+.overlay {
+  padding: 2%;
+}
+
+.inner {
+  max-width: 50em;
+  margin: auto;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 2% 5%;
+  z-index: 10;
+}
+
+.logo {
+  position: fixed;
+  bottom: 0;
+  right: 1em;
+  z-index: 0;
+  opacity: 0.7;
+}
+  .logo img {
+    width: 2.5em;
+    padding: 0.3em;
+    border-radius: 5px;
+  }
+
+.ynh-panel-active .logo {
+  display: none;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.messages {
+  max-width: none;
+  text-align: center;
+  width: 90%;
+  margin: 2% 5%;
+  padding: 1.5em 15%;
+}
+
+
+/* Fonts & Colors */
 
 a { text-decoration: none; }
 
@@ -32,6 +85,14 @@ h6 {
   color: #FFF;
 }
 
+select, 
+.form-text, 
+textarea {
+  border: 0;
+  font-family: 'source_sans_proregular';
+}
+
+
 .sourcePro {
   font-family: 'source_sans_proregular';
 }
@@ -44,22 +105,8 @@ h6 {
   font-family: 'SourceSansPro-Black';
 }
 
-.inner {
-  max-width: 50em;
-  margin: auto;
-}
 
-.wrapper {
-  width: 90%;
-  margin: 2% 5%;
-          transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  z-index: 10;
-}
-
-.overlay {
-  padding: 2%;
-}
+/* Icons */
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: 'icomoon';
@@ -101,34 +148,7 @@ h6 {
   content: "\e600";
 }
 
-.logo {
-  position: absolute;
-  bottom: 0;
-  right: 1em;
-  z-index: 10;
-  opacity: 0.7;
-}
-  .logo img {
-    width: 2.5em;
-    padding: 0.3em;
-    background: #000;
-    border-radius: 5px;
-  }
 
-.ynh-panel-active .logo {
-  display: none;
-}
-
-select, 
-.form-text, 
-textarea {
-  border: 0;
-}
-
-.form-text {
-  padding: 0.8em;
-  width: 100%;
-}
 
 /* ==========================================================================
    2 = Apps
@@ -217,6 +237,8 @@ textarea {
   .listing-apps .first-letter { margin: 0; }
   .listing-apps span + span { font-size: 0.3em; }
 
+
+
 /* ==========================================================================
    3 = User
    ========================================================================== */
@@ -272,6 +294,96 @@ textarea {
       color: #FFF;
     }
 
+
+
+/* ==========================================================================
+   4 = Forms
+   ========================================================================== */
+
+
+/* Extend artichaut-buttons.css */
+.link-btn { background: none;}
+  .link-btn:hover, 
+  .link-btn:focus {background: none;text-decoration: underline;}
+
+
+.form-text {
+  padding: 0.8em;
+  width: 100%;
+}
+
+
+.form-section {
+  /*float: left;*/
+  display: inline-block;
+  vertical-align: top;
+  width: 47%;
+}
+.form-section + .form-section {margin-left:5%;}
+
+label {
+  display: inline-block;
+  padding: 0.3em 1em;
+  background: rgba(0, 0, 0, 0.25);
+  color: #FFF;
+  font-size: 1.2em;
+  margin-top: 1em;
+  margin-bottom: 0em;
+  font-family: 'source_sans_probold';
+  font-weight: normal;
+}
+label {cursor: pointer;}
+
+label + .help-link {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn-group {
+  margin-top: 4em;
+  text-align: right;
+}
+
+.form-group {
+  background: none;
+  margin-bottom: 2em;
+}
+
+.form-text {
+  background: #41444F;
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
+  color: #FFFFFF;
+  padding: 0.8em;
+  margin-bottom: 0.3em;
+  display: block;
+}
+.form-test:-moz-placeholder{color:#999999;}
+.form-text::-moz-placeholder{color:#999999;}
+.form-text:-ms-input-placeholder{color:#999999;}
+.form-text::-webkit-input-placeholder{color:#999999;}
+
+
+.form-text:last-child {margin-bottom:0;}
+
+.form-text:hover,
+.form-text:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.form-text:disabled { color: #999; }
+.form-text:disabled:hover {background-color:rgba(255, 255, 255, 0.3);}
+input:disabled {
+  cursor: not-allowed;
+}
+
+
+
 /* ==========================================================================
    4 = Login form
    ========================================================================== */
@@ -283,10 +395,10 @@ textarea {
 }
 
 .logo-login img {
-  background: #000;
   padding: 0.3em;
   border-radius: 5px;
 }
+
 
 .login-form {
   width: 21em;
@@ -298,18 +410,21 @@ textarea {
   padding: 0.8em 1em;
 }
 
-.form-group {
+.login-form .form-group {
   position: relative;
   margin-bottom: 1em;
   background: #FFF;
 }
 
-  .form-group label {
+  .login-form label {
     display: inline-block;
     min-width: 1em;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
   }
 
-  .form-group label:before {
+  .login-form label:before {
     background: #EEE;
     color: #666;
     position: absolute;
@@ -324,11 +439,10 @@ textarea {
   .login-form .form-text {
     padding: 0.8em 0.8em 0.8em 3em;
     width: 100%;
+    background: #FFF;
+    color: #41444F;
   }
 
-input:disabled {
-  cursor: not-allowed;
-}
 
 /* ==========================================================================
    5 = Colors
@@ -493,49 +607,15 @@ input:disabled {
    6 = Form Edit
    ========================================================================== */
 
-.form-edit h2 {
-  color: #FFF;
-  margin-bottom: 0.4em;
-}
 
-.form-edit .form-group {
-  background: none;
-  overflow: hidden;
-}
-
-.form-edit label {
-  padding: 0.3em 1em;
-  color: #FFF;
+.form-edit .form-group .btn:before {
+  content:"+";
+  display: inline-block;
+  padding-right: 0.75em;
   font-weight: bold;
-  background: rgba(0, 0, 0, 0.25);
 }
 
-.form-edit .form-text {
-  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
-  color: #FFFFFF;
-  padding: 0.8em;
-}
 
-.form-edit .form-text:disabled { color: #999; }
-
-.form-disabled .form-text { border-color:#999; }
-
-.form-edit .form-group .btn {
-  float: right;
-  cursor: pointer;
-}
-
-.form-disabled label {
-  background: rgba(0, 0, 0, 0.1);
-  color: rgba(255, 255, 255, 0.5);
-}
-
-#form-add-mail-alias .mailalias-input:first-child,
-#form-add-mail-drop .maildrop-input:first-child {
-  margin-top: 0;
-}
-
-#form-add-mail-alias .mailalias-input,
-#form-add-mail-drop .maildrop-input {
-  margin-top: 1.5em;
+.form-section:first-child .btn-group {
+  text-align: left;
 }
