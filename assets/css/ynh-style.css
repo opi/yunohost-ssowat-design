@@ -516,7 +516,10 @@ input:disabled {
   padding: 0.8em;
 }
 
-.form-edit .form-text:disabled { color: #999; }
+.form-edit .form-text:disabled {
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+}
 
 .form-disabled .form-text { border-color:#999; }
 
