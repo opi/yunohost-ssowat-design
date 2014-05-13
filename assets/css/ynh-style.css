@@ -268,7 +268,13 @@ textarea {
 .logo-login {
   text-align: center;
   margin-bottom: 1em;
-  opacity: 0.5;
+  opacity: 0.7;
+}
+
+.logo-login img {
+  background: #000;
+  padding: 0.3em;
+  border-radius: 5px;
 }
 
 .login-form {
