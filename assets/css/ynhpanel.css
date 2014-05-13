@@ -5,6 +5,8 @@
    3 = User
    4 = Color
    5 = Animation
+   6 = Media queries Mobile
+   7 = Media queries Tablet
    ========================================================================== */
 
 /* ==========================================================================
@@ -782,3 +784,26 @@
   animation-delay: 0.3s;
   -webkit-animation-delay: 0.3s;
 }
+
+/* ==========================================================================
+   6 = Media Queries Mobile
+   ========================================================================== */
+
+@media screen and (max-width: 500px) {
+  #ynhoverlay .listing-apps li { width: 44%; }
+  #ynhoverlay .listing-apps a {
+    height: 140px;
+    font-size: 3em;
+    width: 100%;
+  }
+  #ynhoverlay .user-menu {
+    float: none;
+  }
+  #yuno-user {
+    text-align: center;
+  }
+}
+
+/* ==========================================================================
+   6 = Media Queries tablet
+   ========================================================================== */
