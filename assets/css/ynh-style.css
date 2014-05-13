@@ -493,7 +493,10 @@ input:disabled {
    6 = Form Edit
    ========================================================================== */
 
-.form-edit h2 { color: #FFF; }
+.form-edit h2 {
+  color: #FFF;
+  margin-bottom: 0.4em;
+}
 
 .form-edit .form-group {
   background: none;
@@ -502,16 +505,15 @@ input:disabled {
 
 .form-edit label {
   padding: 0.3em 1em;
-  color: #222;
+  color: #FFF;
   font-weight: bold;
-  background: #FFF;
+  background: rgba(0, 0, 0, 0.25);
 }
 
 .form-edit .form-text {
-  padding: 0.8em;
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
   color: #FFFFFF;
-  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-  border: 3px solid #FFFFFF;
+  padding: 0.8em;
 }
 
 .form-edit .form-text:disabled { color: #999; }
