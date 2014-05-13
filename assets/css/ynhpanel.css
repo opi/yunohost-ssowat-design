@@ -799,7 +799,7 @@
   #ynhoverlay .user-menu { float: none; }
   #ynhoverlay .user-menu a { padding: 0 1em; }
   #yuno-user { text-align: center; }
-  #yuno-user > div {
+  #yuno-user > * {
     display: block;
   }
   #ynhportal {
