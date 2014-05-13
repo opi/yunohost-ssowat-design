@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="assets/css/fonts.css">
   <link rel="stylesheet" href="assets/css/ynh-style.css">
 </head>
-<body>
+<body class="{{#connected}}logged{{/connected}}">
 
   <h1 id="logo" class="logo">
       <img src="assets/img/logo-ynh-white.svg"/><span class="element-invisible">Yunohost</span>
