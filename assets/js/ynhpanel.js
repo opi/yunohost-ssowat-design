@@ -153,6 +153,7 @@ domReady(function(){
     if (r.readyState != 4 || r.status != 200) return;
 
     // Response is JSON
+    document.querySelector('body').classList.add('ynh-panel-active');
     response = JSON.parse(r.responseText);
 
     // Append close button
